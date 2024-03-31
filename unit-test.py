@@ -8,6 +8,7 @@ class TestWebsiteLoading(unittest.TestCase):
         response = requests.get(url)
         if response.status_code == 200:
             print("Website loaded successfully!")
+            print("Hello World")
             self.assertTrue(True)
         else:
             print("Failed to load website. Status code:", response.status_code)
